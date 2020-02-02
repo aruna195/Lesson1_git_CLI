@@ -1,0 +1,29 @@
+oot@aruna-Inspiron-3583:~# sudo apt-get install kibana
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+kibana is already the newest version (6.8.6).
+0 upgraded, 0 newly installed, 0 to remove and 44 not upgraded.
+N: Ignoring file 'elastic-6.x.lis' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+root@aruna-Inspiron-3583:~# service kibana restart
+root@aruna-Inspiron-3583:~# service kibana status
+● kibana.service - Kibana
+   Loaded: loaded (/etc/systemd/system/kibana.service; disabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Sun 2020-02-02 10:52:36 CST; 1s ago
+  Process: 21625 ExecStart=/usr/share/kibana/bin/kibana -c /etc/kibana/kibana.yml (code=exited, status=1/FAILURE)
+ Main PID: 21625 (code=exited, status=1/FAILURE)
+
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: kibana.service: Service hold-off time over, scheduling restart.
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: kibana.service: Scheduled restart job, restart counter is at 3.
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: Stopped Kibana.
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: kibana.service: Start request repeated too quickly.
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: kibana.service: Failed with result 'exit-code'.
+Feb 02 10:52:36 aruna-Inspiron-3583 systemd[1]: Failed to start Kibana.
+root@aruna-Inspiron-3583:~# sudo apt-get install logstash
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+logstash is already the newest version (1:6.8.6-1).
+0 upgraded, 0 newly installed, 0 to remove and 44 not upgraded.
+N: Ignoring file 'elastic-6.x.lis' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+root@aruna-Inspiron-3583:~# 
